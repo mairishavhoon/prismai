@@ -1,0 +1,282 @@
+/* Navbar background and general styling */
+.navbar {
+  background-color: #ffffff; /* Set background to white */
+  border-bottom: 1px solid #ddd; /* Optional: Add a subtle border for definition */
+}
+
+/* Logo styling */
+.navbar-brand img {
+  height: 50px; /* Increase logo size */
+  max-width: 100%; /* Ensure proper scaling */
+}
+
+/* Navigation link styling */
+.navbar-nav .custom-link {
+  font-size: 1.5rem; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  color: #000000; /* Dark text for contrast on white background */
+  padding: 10px 20px; /* Add spacing around the links */
+  transition: all 0.3s ease-in-out; /* Smooth hover effects */
+}
+
+.navbar-nav .custom-link:hover {
+  background-color: #f1f1f6c0; /* Add light gray background on hover */
+  color: #000000!important; /* Change text color to blue on hover */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Add slight rounding for hover effect */
+}
+
+/* Active link styling */
+.navbar-nav .nav-item.active .custom-link {
+  background-color: #ffffff;
+  color: #000000;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}
+
+
+.einleitung{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
+
+.col-txt{
+  font-weight: bold;
+}
+
+.col-up-txt{
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  padding: 1em;
+
+}
+
+
+.carousel-inner{
+  overflow: hidden;
+}
+.carousel-item-active{
+  position: relative;
+}
+
+a{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 80vh;
+  background-image: url(images/KI1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  animation: changeBackground 15s infinite;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('images/KI1.jpeg');
+  }
+  33.33% {
+    background-image: url('images/KI2.jpeg');
+  }
+  66.66% {
+    background-image: url('images/KI3.jpeg');
+  }
+  100% {
+    background-image: url('images/KI1.jpeg'); /* Loop back to the first image */
+  }
+
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 10%;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+
+
+.instructions-container {
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 0px;
+  background-color: #000000; /* Light grey background */
+  text-align: center; /* Centre-align text and content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.instructions-container h2 {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.go{
+  display: block;
+  align-items: center;
+}
+
+.instructions-container p {
+  font-size: 4vh;
+  margin: 30px 0;
+}
+
+.upload-field {
+  margin: 20px 0;
+  padding: 10px;
+  width: 60%; /* Adjust width to be responsive */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff; /* Bootstrap primary blue */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.card-title{
+  font-weight: bolder;
+  font-size: 2em;
+  color: black;
+}
+
+.card-text{
+  color: black;
+}
+
+.col {
+  border: 2px black solid;
+  margin: 2vh;
+  padding: 20px 1vh;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.impressum{
+  color : black;
+  padding-left: 2vh;
+  padding-top: 10px;
+}
+
+.impressum h1{
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.autor{
+  margin-bottom: 2vh;
+  margin-top: 2vh
+}
+.vera{
+  margin-bottom: 2vh;
+  margin-top: 2vh
+}
+
+
+.impressum h2{
+  font-weight: bold
+}
+
+.impressum a{
+  color : blue!important;
+  text-decoration: underline;
+}
+
+.radio h1{
+  color: black;
+  font-weight: bolder
+}
+
+.radio{
+  margin-left: 2dvh;
+  margin-top: 2vh;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-inline: 10px;
+  }
+}

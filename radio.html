@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Alle Elemente können (und sollen) verändert werden. Dieses Template dient als Orientierung, wie Bootstrap in Internetseiten eingebaut werden kann. -->
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <!-- Bootstrap Javascript Dateien -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Eigene Styles/CSS Dateien -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+        <!-- Website Titel -->
+        <title>PrismaAI</title>
+    </head>
+    <body>
+        <!-- Header mit Navigation Bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #000;">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Logo.png" alt="Prism AI" style="height: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="impressum.html">Impressum</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link custom-link" href="radio.html">Radiospot</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="radio">
+            <h1>Our Radiospot</h1>
+            <div class="audio-player-container">
+                <audio controls>
+                  <source src="audio/radio.mp3" type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+        </div>
+
+
+
+
+  <!-- Newsletter Card -->
+<div class="card mt-4">
+    <div class="card-body">
+        <h2 class="card-title">Newsletter</h2>
+ 
+        <p class="card-text">
+            In unserem Newsletter erhalten Sie spannende Einblicke in die Welt der Künstlichen Intelligenz. 
+            Erfahren Sie, welche Chancen KI für Unternehmen, Bildung und das tägliche Leben bietet, 
+            und welche Risiken Sie beachten sollten. 
+            Bleiben Sie auf dem Laufenden mit aktuellen Trends, inspirierenden Radiospots und exklusiven Veranstaltungen.
+        </p>
+        <form action="/subscribe" method="post">
+            <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+            <button type="submit">Jetzt abonnieren</button>
+          </form>
+          
+</div>
+
+        <!-- Footer Abschnitt -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Nach oben</a></p>
+        </footer>
+    </body>
+</html>
